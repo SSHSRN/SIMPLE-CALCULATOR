@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+
+/* Global css */
+
+.icon{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: grid;
+    justify-items: center;
+}
+
+.header{
+    width: 100%;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+}
+
+/* Css for navbar */
+
+.nav{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.nav-parent{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.nav-link{
+    list-style-type: none;
+    width: 30%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-family: poppins;
+    font-size: 18px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    scale: 1.1;
+}
+
+/* Css for calculator section */
+
+.btn{
+    padding: 25px 55px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.calculator{
+    width: 100%;
+}
+
+.opSelHead{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.values_select{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#add{
+    margin-top: 50px;
+}
+
+.operator_select{
+    width: 30%;
+    margin-left: 50%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+.align_c{
+    display: grid;
+    justify-content: center;
+}
+
+.val1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.v1{
+    border: dashed red;
+    background-color: rgb(38, 3, 133);
+    scale: 1.5;
+}
+
+.v2{
+    border: dashed red;
+    background-color: rgb(38, 3, 133);
+    scale: 1.5;
+}
+
+.subm{
+    margin-top: 50px;
+}
+
+/* Css for Navbar links */
+
+.link{
+    background-color: black;
+    color: white;
+}
+
+.link:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    scale: 1.1;
+}

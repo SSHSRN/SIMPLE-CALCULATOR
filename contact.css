@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+
+/* Global css */
+
+.icon{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: grid;
+    justify-items: center;
+}
+
+.header{
+    width: 100%;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+}
+
+/* Css for navbar */
+
+.nav{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.nav-parent{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.nav-link{
+    list-style-type: none;
+    width: 30%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-family: poppins;
+    font-size: 18px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    scale: 1.1;
+}
+
+.contact{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.contact_txt{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/* Css for Navbar links */
+
+.link{
+    background-color: black;
+    color: white;
+}
+
+.link:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    scale: 1.1;
+}
+
+.table{
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.tablecell{
+    transition: 0.4s;
+    text-align: center;
+    padding: 25px 55px;
+}
+
+.tablecell:hover{
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}

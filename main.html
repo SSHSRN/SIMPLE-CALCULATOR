@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <!-- Header -->
+
+        <header class="header">
+            <div class="container container1">
+                <div class="logo">
+                    <img class="icon" src="https://icons.iconarchive.com/icons/wineass/ios7-redesign/256/Calculator-icon.png" alt="calc_logo"/>
+                    <h1>+-*/Calculator/*-+</h1>
+                </div>
+            </div>
+
+            <!-- Nav area -->
+
+            <nav class="nav">
+                <ul class="nav-parent">
+                    <li class="nav-link"><a class="link" href="main.html">Home</a></li>
+                    <li class="nav-link"><a class="link" href="about.html">About</a></li>
+                    <li class="nav-link"><a class="link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <script>
+                var res;
+                var restxt;
+                var operator;
+                function sum(){
+                    operator = '+';
+                    var a=parseInt(document.getElementById('v1').value);
+                    var b=parseInt(document.getElementById('v2').value);
+                    res = a+b;
+                    console.log(res);
+                }
+
+                function sub(){
+                    operator = '-';
+                    var a=parseInt(document.getElementById('v1').value);
+                    var b=parseInt(document.getElementById('v2').value);
+                    res = a-b;
+                    console.log(res);
+                }
+
+                function mul(){
+                    operator = '*';
+                    var a=parseInt(document.getElementById('v1').value);
+                    var b=parseInt(document.getElementById('v2').value);
+                    res = a*b;
+                    console.log(res);
+                }
+
+                function div(){
+                    operator = '/';
+                    var a=parseInt(document.getElementById('v1').value);
+                    var b=parseInt(document.getElementById('v2').value);
+                    res = a/b;
+                    console.log(res);
+                }
+                
+                function showres(){
+                    if(operator=='+'){
+                        restxt = ("The sum of " +  document.getElementById('v1').value +" and " + document.getElementById('v2').value + " is " + res + ".");
+                    }
+                    else if(operator=='-'){
+                        restxt = ("The difference of " +  document.getElementById('v1').value +" and " + document.getElementById('v2').value + " is " + res + ".");
+                    }
+                    else if(operator=='*'){
+                        restxt = ("The product of " +  document.getElementById('v1').value +" and " + document.getElementById('v2').value + " is " + res + ".");
+                    }
+                    else if(operator=='/'){
+                        restxt = ("The quotient of " +  document.getElementById('v1').value +" divided by " + document.getElementById('v2').value + " is " + res + ".");
+                    }
+                    addres(restxt);
+                }
+
+                function addres(restxt) {
+                    var calculator = document.getElementById("calculator"); // finds the container
+                    var x = document.createElement("div");
+                    x.style.width = "50%";
+                    x.style.height = "100px";
+                    x.style.background = "violet";
+                    x.style.color = "white";
+                    x.style.textAlign = "center";
+                    x.style.display = "flex";
+                    x.style.justifyContent = "center";
+                    x.style.alignItems = "center";
+                    x.style.margin = "auto";
+                    x.textContent = restxt;
+                    calculator.appendChild(x);
+                }
+            </script>
+        </header>
+
+        <!-- Main section -->
+
+        <section class="calculator" id="calculator">
+            <div class="values_select">
+                <div class="val1 align_c">
+                    <input type="text" pattern="[0-9]+" class="v1" id="v1" placeholder="Enter a number"/>
+                </div>
+                <div class="val2 align_c">
+                    <input type="text" pattern="[0-9]+" class="v2" id="v2" placeholder="Enter a number"/>
+                </div>
+            </div>
+            <h2 class="opSelHead">Select an Operation</h2>
+            <div class="operator_select">
+            <input type="radio" id="add" name="operation" onclick="sum()">Addition <br>
+            <input type="radio" id="add" name="operation" onclick="sub()">Subtraction <br>
+            <input type="radio" id="add" name="operation" onclick="mul()">Multiplication <br>
+            <input type="radio" id="add" name="operation" onclick="div()">Division <br> 
+            </div>
+            <div class="subm align_c">
+                <button type="submit" class="btn" onclick="showres()">Calculate</button>
+            </div>   
+        </section>
+    </body>
+</html>
